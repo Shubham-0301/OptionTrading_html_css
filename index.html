@@ -9,404 +9,466 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .nav-link:hover{
+            font-size: larger;
+            transition: ease-in-out 0.5s;
+            color: blue;
+        }
+    </style>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary px-5">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="./assets/logo.jpeg" alt="Logo" height="40">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Courses</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link ">Why Join Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link ">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">Open Demat</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <center>
-        <div class="w-75">
-            <div id="carouselExampleAutoplaying" class="carousel slide rounded-5" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active rounded-5">
-                        <img src="./assets/one.webp" class="d-block  w-100 rounded-5 " alt="One" height="700">
-                    </div>
-                    <div class="carousel-item rounded-5">
-                        <img src="./assets/two.webp" class="d-block w-100 rounded-5" alt="Two" height="700">
-                    </div>
-                    <div class="carousel-item rounded-5">
-                        <img src="./assets/three.webp" class="d-block w-100 rounded-5" alt="Three" height="700">
-                    </div>
-                    <div class="carousel-item rounded-5">
-                        <img src="./assets/four.webp" class="d-block w-100 rounded-5" alt="Four" height="700">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+    <body style="background-color:rgb(181, 242, 192);">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary px-5">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/logo.jpeg" alt="Logo" height="100" width="250">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-
-        <div class="container my-5">
-            <center>
-                <div class="my-4">
-                    <h1>Features<span class="badge bg-primary">New</span></h1>
-                </div>
-            </center>
-            <div class="row mb-3" data-aos="fade-up">
-                <div class="col gap-3">
-                    <div class="card" style="width: 25rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <i class="bi bi-stack text-primary"></i>
-                            </h5>
-                            <h6 class="card-title ">Structured Learning</h6>
-                            <p class="card-text">
-                                We take you through the basics of Option Trading to the advance with simple Learning
-                                methodology using pure PRICE ACTION
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col gap-3">
-                    <div class="card" style="width: 25rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <i class="bi bi-patch-question text-primary"></i>
-                            </h5>
-                            <h6 class="card-title">Doubt Clearing Sessions</h6>
-                            <p class="card-text">Get each and every trade of yours checked and every doubt cleared
-                                directly one on one through voice notes every Saturday.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col gap-3">
-                    <div class="card" style="width: 25rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <i class="bi bi-arrows-angle-contract text-primary"></i>
-                            </h5>
-                            <h6 class="card-title">Real Time Support</h6>
-                            <p class="card-text">Join our Free Telegram Group to get real time updates and support
-                                during market hours.
-                                <br>
-                                <br>
-                            </p>
-                        </div>
-                    </div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/"><b>Home</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Features" ><B>Features</B></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Courses"><B>Courses</B></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#why_join_us"><b>Why Join Us</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#about_us"><B>About Us</B></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://zerodha.com/"><B>Open Demat</B></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="row" data-aos="fade-up">
-                <div class="col gap-3">
-                    <div class="card" style="width: 25rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <i class="bi bi-play-circle text-primary"></i>
-                            </h5>
-                            <h6 class="card-title ">Learning Video</h6>
-                            <p class="card-text">
-                                Access to Curated videos with real time trade to provide you the practical experience.
-                                <br>
-                                <br>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col gap-3">
-                    <div class="card" style="width: 25rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <i class="bi bi-patch-question text-primary"></i>
-                            </h5>
-                            <h6 class="card-title">Simplified Methodology</h6>
-                            <p class="card-text">Use only PRICE ACTION, understand the chart and create positions with
-                                low risk and high reward ratio.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col gap-3">
-                    <div class="card" style="width: 25rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <i class="bi bi-arrows-angle-contract text-primary"></i>
-                            </h5>
-                            <h6 class="card-title">Weekend Live Classes</h6>
-                            <p class="card-text">Interact freely, improve your learning by joining our weekend class
-                                <br><br>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container my-5">
-            <center>
-                <div class="my-4">
-                    <h1><span class="badge bg-danger">Our</span>Courses</h1>
-                </div>
-            </center>
-            <div class="row mb-3" data-aos="fade-up">
-                <div class="col">
-                    <div class="card" style="width: 20rem;">
-                        <div class="card-body">
-                            <h5 class="card-subtitle text-info mb-2"> For Beginner</h5>
-                            <h3 class="card-title fs-1"><span class="badge bg-warning">Free</span></h3>
-                            <p class="card-text "> Start Your Journey <br> with our free course <br></p>
-                            <p class="card-text my-5 fs-5">
-                                Engaging lectures <br>
-                                Interesting Examples <br>
-                                Must Watch <br>
-                            </p>
-                            <button type="button" class="btn btn-outline-info">Enroll Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card" style="width: 20rem;">
-                        <div class="card-body">
-                            <h5 class="card-subtitle text-info mb-2"> For Intermediate</h5>
-                            <h3 class="card-title fs-1"><span class="badge bg-danger">₹ 5999</span></h3>
-                            <p class="card-text "> S&R Levels, Fibonacci Setup, M/W 3 Line Setup etc.</p>
-                            <p class="card-text my-5 fs-5">
-                                2 Interactive Live Classes<br>
-                                1 Month of One on One <br>
-                                Support every Saturday <br>
-                            </p>
-                            <button type="button" class="btn btn-outline-info">Enroll Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card" style="width: 20rem;">
-                        <div class="card-body">
-                            <h5 class="card-subtitle text-info mb-2"> Trading Psychology</h5>
-                            <h3 class="card-title fs-1"><span class="badge bg-success">₹ 349</span></h3>
-                            <p class="card-text "> Fear, Greed, Confidence & Trailing Stoploss 4 Prolems 1 Solution</p>
-                            <br>
-                            <p class="card-text my-3 fs-5">
-                                4 Lectures<br>
-                                Engaging Videos <br>
-                                Simplify Your Trading <br>
-                                1 Month Access
-                            </p>
-                            <button type="button" class="btn btn-outline-info">Enroll Now</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </nav>
         <center>
-            <div class="my-4">
-                <h1>Why Join <span class="badge bg-info">Us</span></h1>
-            </div>
-            <center>
-                <iframe class="rounded-5" width="560" height="315" src="https://www.youtube.com/embed/3_khQNWpZ68"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-            </center>
-        </center>
+            <div class="w-75">
+                <div id="carouselExampleAutoplaying" class="carousel slide rounded-5" data-bs-ride="carousel">
+                    <div class="carousel-inner">
 
-    </center>
-    <center>
+                        <div class="carousel-item active rounded-5">
+                            <img src="./assets/one.webp" height="400" class="rounded">
+                        </div>
+                        <div class="carousel-item rounded-5">
+                            <img src="./assets/two.webp" height="400" class="rounded">
+                        </div>
+                        <div class="carousel-item rounded-5">
+                            <img src="./assets/three.webp" height="400" class="rounded">
+                        </div>
+                        <div class="carousel-item rounded-5">
+                            <img src="./assets/four.webp" height="400" class="rounded">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="container my-5">
+                <center>
+                    <div class="my-4">
+                        <h1><span class="badge bg-danger">Live</span>Market</h1>
+                    </div>
+                </center>
+                <center>
+                    <div class="row w-75 border border-primary p-5 rounded">
+                        <div class="col-3">
+                            <a name="Trading_journal" id="Trading_journal" class="btn btn-primary"
+                                href="https://in.tradingview.com/chart/?symbol=NSE%3ANIFTY" role="button">Nifty
+                                Fiflty</a>
+                        </div>
+                        <div class="col-3">
+                            <a name="Trading_journal" id="Trading_journal" class="btn btn-primary"
+                                href="https://in.tradingview.com/chart/?symbol=NSE%3ABANKNIFTY" role="button">Bank
+                                Nifty</a>
+                        </div>
+                        <div class="col-3"></div>
+                        <div class="col-3">
+                            <a name="Trading_journal" id="Trading_journal" class="btn btn-primary"
+                                href="./trading_journal.html" role="button">Trading Journal</a>
+                        </div>
+                    </div>
 
-        <h5 class="card-subtitle text-secondary my-5 fw-lighter">The Number speaks for itself.</h5>
-        <div class="container my-3 w-100">
-            <div class="row">
-                <div class="col-3">
-                    <div class="rounded  py-2 px-4"
-                        style="width: 20rem; height: 6rem; background-color: rgb(17, 24, 34);">
-                        <div class="d-flex justify-content-between">
-                            <h3 class="text-white">
-                                73K+
-                            </h3>
-                            <i class="bi bi-hand-thumbs-up text-primary"></i>
-                        </div>
-                        <div class="d-flex  flex-row">
-                            <i class="bi bi-graph-up-arrow text-success me-3"></i>
-                            <h4 class="text-secondary fw-lighter">
-                                Youtube Subscribers
-                            </h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="rounded  py-2 px-4"
-                        style="width: 20rem; height: 6rem; background-color: rgb(17, 24, 34);">
-                        <div class="d-flex justify-content-between">
-                            <h3 class="text-white">
-                                45K+
-                            </h3>
-                            <i class="bi bi-hand-thumbs-up text-primary"></i>
-                        </div>
-                        <div class="d-flex  flex-row">
-                            <i class="bi bi-graph-up-arrow text-success me-3"></i>
-                            <h4 class="text-secondary fw-lighter">
-                                Telegram Members
-                            </h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="rounded  py-2 px-4"
-                        style="width: 20rem; height: 6rem; background-color: rgb(17, 24, 34);">
-                        <div class="d-flex justify-content-between">
-                            <h3 class="text-white">
-                                38K+
-                            </h3>
-                            <i class="bi bi-hand-thumbs-up text-primary"></i>
-                        </div>
-                        <div class="d-flex  flex-row">
-                            <i class="bi bi-graph-up-arrow text-success me-3"></i>
-                            <h4 class="text-secondary fw-lighter">
-                                Instagram Followers
-                            </h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="rounded  py-2 px-4"
-                        style="width: 20rem; height: 6rem; background-color: rgb(17, 24, 34);">
-                        <div class="d-flex justify-content-between">
-                            <h3 class="text-white">
-                                73K+
-                            </h3>
-                            <i class="bi bi-hand-thumbs-up text-primary"></i>
-                        </div>
-                        <div class="d-flex  flex-row">
-                            <i class="bi bi-graph-up-arrow text-success me-3"></i>
-                            <h4 class="text-secondary fw-lighter">
-                                Youtube Subscribers
-                            </h4>
-                        </div>
-                    </div>
-                </div>
+                </center>
             </div>
-        </div>
-    </center>
-    <center>
-        <div class="my-5">
-            <h1>Testimonials</h1>
-        </div>
-        <h5 class="card-subtitle text-secondary my-5 fw-lighter">What Our Learner's Say?</h5>
-        <div class="container my-4">
-            <div class="row">
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body">
-                            <blockquote class="blockquote mb-0">
-                                <p>"I never thought understanding the chart could be this easy. All thanks to Prateel!
-                                    Awesome Guy."</p>
-                                <footer class="blockquote-footer">Kavish Sharma</footer>
-                            </blockquote>
-                        </div>
+            <div class="container my-5" id="Features">
+                <center>
+                    <div class="my-4">
+                        <h1>Features<span class="badge bg-primary">New</span></h1>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body">
-                            <blockquote class="blockquote mb-0">
-                                <p>"This course gave me simple and effective strategies to trade and they are working
-                                    like a charm with more than 80% accuracy."</p>
-                                <footer class="blockquote-footer">Anmol Brar</footer>
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body">
-                            <blockquote class="blockquote mb-0">
-                                <p>"Love the way sir speaks, love the way he explains. Prateek sir has literally changed
-                                    my life."</p>
-                                <footer class="blockquote-footer">Pratham Joshi</footer>
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </center>
-    <div class="my-xxl-5">
-        <div class="container my-5">
-            <div class="row">
-                <div class="col-6">
-                    <h3 class="card-title">
-                        Subscribe
-                    </h3>
-                    <p class="card-subtitle text-info mb-2"> Join Our Mailing Service</p>
-                    <div class="input-group mb-3" style="width: 18rem;">
-                        <input type="text" class="form-control" placeholder="Your @ Email.Com"
-                            aria-label="Recipient's username" aria-describedby="basic-addon2">
-                        <button class="input-group-text bg-info text-white">
-                            Subscribe
-                        </button>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="rounded-5 p-5" style="width: 35rem; height: 25rem; background-color: rgb(17, 24, 34);">
-                        <center>
-                            <h1 class="text-white">
-                                Learn and Grow your <br>
-                                money with out app
-                            </h1>
-                            <h5 class="card-subtitle text-secondary my-5 fw-lighter">Dive into the best option trading
-                                course available in the market</h5>
-                            <div class="rounded-5 d-flex
-                                justify-content-center align-items-center p-3"
-                                style="background-color: rgb(98, 106, 111); width: 12rem;">
-                                <i class="bi bi-google-play text-white fs-2"></i>
-                                <div>
-                                    <p class="card-subtitle text-white fw-lighter">Get it on</p>
-                                    <h5 class="text-white">
-                                        Google play
-                                    </h5>
-                                </div>
+                </center>
+                <div class="row mb-3" data-aos="fade-up">
+                    <div class="col gap-3">
+                        <div class="card" style="width: 25rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <i class="bi bi-stack text-primary"></i>
+                                </h5>
+                                <h6 class="card-title ">Structured Learning</h6>
+                                <p class="card-text">
+                                    We take you through the basics of Option Trading to the advance with simple Learning
+                                    methodology using pure PRICE ACTION
+                                </p>
                             </div>
-                        </center>
+                        </div>
+                    </div>
+                    <div class="col gap-3">
+                        <div class="card" style="width: 25rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <i class="bi bi-patch-question text-primary"></i>
+                                </h5>
+                                <h6 class="card-title">Doubt Clearing Sessions</h6>
+                                <p class="card-text">Get each and every trade of yours checked and every doubt cleared
+                                    directly one on one through voice notes every Saturday.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col gap-3">
+                        <div class="card" style="width: 25rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <i class="bi bi-arrows-angle-contract text-primary"></i>
+                                </h5>
+                                <h6 class="card-title">Real Time Support</h6>
+                                <p class="card-text">Join our Free Telegram Group to get real time updates and support
+                                    during market hours.
+                                    <br>
+                                    <br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" data-aos="fade-up">
+                    <div class="col gap-3">
+                        <div class="card" style="width: 25rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <i class="bi bi-play-circle text-primary"></i>
+                                </h5>
+                                <h6 class="card-title ">Learning Video</h6>
+                                <p class="card-text">
+                                    Access to Curated videos with real time trade to provide you the practical
+                                    experience.
+                                    <br>
+                                    <br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col gap-3">
+                        <div class="card" style="width: 25rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <i class="bi bi-patch-question text-primary"></i>
+                                </h5>
+                                <h6 class="card-title">Simplified Methodology</h6>
+                                <p class="card-text">Use only PRICE ACTION, understand the chart and create positions
+                                    with
+                                    low risk and high reward ratio.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col gap-3">
+                        <div class="card" style="width: 25rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <i class="bi bi-arrows-angle-contract text-primary"></i>
+                                </h5>
+                                <h6 class="card-title">Weekend Live Classes</h6>
+                                <p class="card-text">Interact freely, improve your learning by joining our weekend class
+                                    <br><br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container my-5" id="Courses">
+                <center>
+                    <div class="my-4">
+                        <h1><span class="badge bg-danger">Our</span>Courses</h1>
+                    </div>
+                </center>
+                <div class="row mb-3" data-aos="fade-up">
+                    <div class="col">
+                        <div class="card" style="width: 20rem;">
+                            <div class="card-body">
+                                <h5 class="card-subtitle text-info mb-2"> For Beginner</h5>
+                                <h3 class="card-title fs-1"><span class="badge bg-warning">Free</span></h3>
+                                <p class="card-text "> Start Your Journey <br> with our free course <br></p>
+                                <p class="card-text my-5 fs-5">
+                                    Engaging lectures <br>
+                                    Interesting Examples <br>
+                                    Must Watch <br>
+                                </p>
+                                <button type="button" class="btn btn-outline-info">Enroll Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 20rem;">
+                            <div class="card-body">
+                                <h5 class="card-subtitle text-info mb-2"> For Intermediate</h5>
+                                <h3 class="card-title fs-1"><span class="badge bg-danger">₹ 4999</span></h3>
+                                <p class="card-text "> S&R Levels, Fibonacci Setup, M/W 3 Line Setup etc.</p>
+                                <p class="card-text my-5 fs-5">
+                                    2 Interactive Live Classes<br>
+                                    1 Month of One on One <br>
+                                    Support every Saturday <br>
+                                </p>
+                                <button type="button" class="btn btn-outline-info">Enroll Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 20rem;">
+                            <div class="card-body">
+                                <h5 class="card-subtitle text-info mb-2"> Risk Management</h5>
+                                <h3 class="card-title fs-1"><span class="badge bg-success">₹ 999</span></h3>
+                                <p class="card-text "> Learn how to manage your risk and rember captial is your king</p>
+                                <br>
+                                <p class="card-text my-3 fs-5">
+                                    2 Lectures<br>
+                                    Engaging Videos <br>
+                                    Simplify Your Trading <br>
+                                    1 Month Access
+                                </p>
+                                <button type="button" class="btn btn-outline-info">Enroll Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 20rem;">
+                    <div class="card-body">
+                        <h5 class="card-subtitle text-info mb-2"> Trading Psychology</h5>
+                        <h3 class="card-title fs-1"><span class="badge bg-success">₹ 599</span></h3>
+                        <p class="card-text "> Fear, Greed, Confidence & Trailing Stoploss 4 Prolems 1 Solution</p>
+                        <br>
+                        <p class="card-text my-3 fs-5">
+                            4 Lectures<br>
+                            Engaging Videos <br>
+                            Simplify Your Trading <br>
+                            1 Month Access
+                        </p>
+                        <button type="button" class="btn btn-outline-info">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+
+            <center>
+                <div class="my-4" id="why_join_us">
+                    <h1>Why Join <span class="badge bg-info">Us</span></h1>
+                </div>
+                <center>
+                    <iframe class="rounded-5" width="560" height="315" src="Paste youtube link"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </center>
+            </center>
+
+        </center>
+        <center data-aos="fade-up">
+
+            <h5 class="card-subtitle text-secondary my-5 fw-lighter">The Number speaks for itself.</h5>
+            <div class="container my-3 w-100">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="rounded  py-2 px-4"
+                            style="width: 20rem; height: 6rem; background-color: rgb(17, 24, 34);">
+                            <div class="d-flex justify-content-between">
+                                <h3 class="text-white">
+                                    73K+
+                                </h3>
+                                <i class="bi bi-hand-thumbs-up text-primary"></i>
+                            </div>
+                            <div class="d-flex  flex-row">
+                                <i class="bi bi-graph-up-arrow text-success me-3"></i>
+                                <h4 class="text-secondary fw-lighter">
+                                    Youtube Subscribers
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="rounded  py-2 px-4"
+                            style="width: 20rem; height: 6rem; background-color: rgb(17, 24, 34);">
+                            <div class="d-flex justify-content-between">
+                                <h3 class="text-white">
+                                    45K+
+                                </h3>
+                                <i class="bi bi-hand-thumbs-up text-primary"></i>
+                            </div>
+                            <div class="d-flex  flex-row">
+                                <i class="bi bi-graph-up-arrow text-success me-3"></i>
+                                <h4 class="text-secondary fw-lighter">
+                                    Telegram Members
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="rounded  py-2 px-4"
+                            style="width: 20rem; height: 6rem; background-color: rgb(17, 24, 34);">
+                            <div class="d-flex justify-content-between">
+                                <h3 class="text-white">
+                                    38K+
+                                </h3>
+                                <i class="bi bi-hand-thumbs-up text-primary"></i>
+                            </div>
+                            <div class="d-flex  flex-row">
+                                <i class="bi bi-graph-up-arrow text-success me-3"></i>
+                                <h4 class="text-secondary fw-lighter">
+                                    Instagram Followers
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="rounded  py-2 px-4"
+                            style="width: 20rem; height: 6rem; background-color: rgb(17, 24, 34);">
+                            <div class="d-flex justify-content-between">
+                                <h3 class="text-white">
+                                    73K+
+                                </h3>
+                                <i class="bi bi-hand-thumbs-up text-primary"></i>
+                            </div>
+                            <div class="d-flex  flex-row">
+                                <i class="bi bi-graph-up-arrow text-success me-3"></i>
+                                <h4 class="text-secondary fw-lighter">
+                                    Youtube Subscribers
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </center>
+        <center data-aos="fade-up">
+            <div class="my-5">
+                <h1>Testimonials</h1>
+            </div>
+            <h5 class="card-subtitle text-secondary my-5 fw-lighter">What Our Learner's Say?</h5>
+            <div class="container my-4">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <blockquote class="blockquote mb-0">
+                                    <p>"I never thought understanding the chart could be this easy. All thanks to
+                                        Prateel!
+                                        Awesome Guy."</p>
+                                    <footer class="blockquote-footer">Kavish Sharma</footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <blockquote class="blockquote mb-0">
+                                    <p>"This course gave me simple and effective strategies to trade and they are
+                                        working
+                                        like a charm with more than 80% accuracy."</p>
+                                    <footer class="blockquote-footer">Anmol Brar</footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <blockquote class="blockquote mb-0">
+                                    <p>"Love the way sir speaks, love the way he explains. Shubham sir has literally
+                                        changed
+                                        my life."</p>
+                                    <footer class="blockquote-footer">Pratham Joshi</footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </center>
+        <div class="my-xxl-5" data-aos="fade-up">
+            <div class="container my-5">
+                <div class="row">
+                    <div class="col-6">
+                        <h3 class="card-title">
+                            Subscribe
+                        </h3>
+                        <p class="card-subtitle text-info mb-2"> Join Our Mailing Service</p>
+                        <div class="input-group mb-3" style="width: 18rem;">
+                            <input type="text" class="form-control" placeholder="Your @ Email.Com"
+                                aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <button class="input-group-text bg-info text-white">
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="rounded-5 p-5"
+                            style="width: 35rem; height: 25rem; background-color: rgb(17, 24, 34);">
+                            <center>
+                                <h1 class="text-white">
+                                    Learn and Grow your <br>
+                                    money with out app
+                                </h1>
+                                <h5 class="card-subtitle text-secondary my-5 fw-lighter">Dive into the best option
+                                    trading
+                                    course available in the market</h5>
+                                <div class="rounded-5 d-flex
+                                justify-content-center align-items-center p-3"
+                                    style="background-color: rgb(98, 106, 111); width: 12rem;">
+                                    <i class="bi bi-google-play text-white fs-2"></i>
+                                    <div>
+                                        <p class="card-subtitle text-white fw-lighter">Get it on</p>
+                                        <h5 class="text-white">
+                                            Google play
+                                        </h5>
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-</body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
 
 </html>

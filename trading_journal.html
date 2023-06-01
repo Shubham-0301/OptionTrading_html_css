@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trading Journal</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 8px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    tr:hover {
+      background-color: #f5f5f5;
+    }
+
+    input[type="text"], textarea {
+      width: 100%;
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h2>Trading Journal</h2>
+  <form id="journalForm">
+    <label for="date">Date:</label>
+    <input type="text" id="date" name="date" required><br>
+
+    <label for="trade">Trade:</label>
+    <input type="text" id="trade" name="trade" required><br>
+
+    <label for="profit">Profit:</label>
+    <input type="text" id="profit" name="profit" required><br>
+
+    <label for="loss">Loss:</label>
+    <input type="text" id="loss" name="loss" required><br>
+
+    <label for="target">Target:</label>
+    <input type="text" id="target" name="target" required><br>
+
+    <label for="stoploss">Stop Loss:</label>
+    <input type="text" id="stoploss" name="stoploss" required><br>
+
+    <label for="c2c">C2C:</label>
+    <input type="text" id="c2c" name="c2c" required><br>
+
+    <label for="comment">Comment:</label>
+    <textarea id="comment" name="comment" rows="4" required></textarea><br>
+
+    <button type="submit">Add Entry</button>
+  </form>
+
+  <table id="journalTable">
+    <tr>
+      <th>Date</th>
+      <th>Trade</th>
+      <th>Profit</th>
+      <th>Loss</th>
+      <th>Target</th>
+      <th>Stop Loss</th>
+      <th>C2C</th>
+      <th>Comment</th>
+    </tr>
+  </table>
+
+  <script>
+    document.getElementById("journalForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      var table = document.getElementById("journalTable");
+      var row = table.insertRow(-1);
+      var dateCell = row.insertCell(0);
+      var tradeCell = row.insertCell(1);
+      var profitCell = row.insertCell(2);
+      var lossCell = row.insertCell(3);
+      var targetCell = row.insertCell(4);
+      var stoplossCell = row.insertCell(5);
+      var c2cCell = row.insertCell(6);
+      var commentCell = row.insertCell(7);
+
+      dateCell.innerHTML = document.getElementById("date").value;
+      tradeCell.innerHTML = document.getElementById("trade").value;
+      profitCell.innerHTML = document.getElementById("profit").value;
+      lossCell.innerHTML = document.getElementById("loss").value;
+      targetCell.innerHTML = document.getElementById("target").value;
+      stoplossCell.innerHTML = document.getElementById("stoploss").value;
+      c2cCell.innerHTML = document.getElementById("c2c").value;
+      commentCell.innerHTML = document.getElementById("comment").value;
+
+      document.getElementById("journalForm").reset();
+    });
+  </script>
+</body>
+</html>
