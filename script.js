@@ -12,3 +12,5 @@ const riskmanagement = () => {
 const trading = () => {
     window.location.href = "https://www.youtube.com/playlist?list=PLp8Cocyu4SVjhfSwjXn8ypvkpNDuDbcCs";
 }
+
+
