@@ -1,84 +1,144 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Trading Journal</title>
   <style>
-    body{
-      padding: 20px 100px 20px 100px;
+    body {
+      background-color: rgb(48, 52, 57);
     }
+
     table {
       border-collapse: collapse;
       width: 100%;
     }
 
-    th, td {
+    .heading {
+      text-align: center;
+      border: none;
+      border-radius: 8px;
+      background-color: rgb(42, 87, 91);
+      padding: 1px 1px 1px 1px;
+      font-size: larger;
+    }
+
+    .size {
+      padding: 0px 200px 100px 50px;
+      justify-content: space-between;
+    }
+
+    .size2 {
+      color: #bfbaba;
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    th,
+    td {
       text-align: left;
       padding: 8px;
       border-bottom: 1px solid #ddd;
     }
 
+    table,
+    th,
+    td {
+      border: 2px solid;
+    }
+
     th {
       background-color: #f2f2f2;
+      cursor: context-menu;
+    }
+
+    #date {
+      margin: 20px;
+      font-size: 18px;
+      border-radius: 4px;
+      padding: 2px;
+      cursor: text;
+    }
+
+    #journalTable {
+      margin: 20px;
+      padding: 10px;
+      font-size: 20px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .entry {
+      font-size: 18px;
+      font-family: text;
     }
 
     tr:hover {
       background-color: #f5f5f5;
     }
 
-    input[type="text"], textarea {
+    input[type="text"],
+    textarea {
       width: 100%;
       padding: 6px 12px;
       border: 1px solid #ccc;
       border-radius: 4px;
       box-sizing: border-box;
+      justify-content: space-between;
     }
 
     button {
-      background-color: #4CAF50;
+      background-color: #384e9c;
       color: white;
       padding: 8px 12px;
       border: none;
       border-radius: 4px;
       cursor: pointer;
+      font-size: 20px;
+      margin: 9px auto;
+      transition: background-color 0.8s ease-in-out;
+
     }
 
     button:hover {
-      background-color: #45a049;
+      background-color: #36056b;
     }
   </style>
 </head>
-<body>
-  <h2>Trading Journal</h2>
-  <form id="journalForm">
-    <label for="date">Date:</label>
-    <input type="text" id="date" name="date" required><br>
 
-    <label for="trade">Trade:</label>
+<body>
+  <div class="heading">
+    <h2>Trading Journal</h2>
+  </div>
+  <form id="journalForm" class="size">
+    <br><label for="date" class="size2">Date:</label>
+    <input type="date" id="date" name="date"><br>
+
+    <label for="trade" class="size2">Trade:</label>
     <input type="text" id="trade" name="trade" required><br>
 
-    <label for="profit">Profit:</label>
+    <label for="profit" class="size2">Profit:</label>
     <input type="text" id="profit" name="profit" required><br>
 
-    <label for="loss">Loss:</label>
+    <label for="loss" class="size2">Loss:</label>
     <input type="text" id="loss" name="loss" required><br>
 
-    <label for="target">Target:</label>
+    <label for="target" class="size2">Target:</label>
     <input type="text" id="target" name="target" required><br>
 
-    <label for="stoploss">Stop Loss:</label>
+    <label for="stoploss" class="size2">Stop Loss:</label>
     <input type="text" id="stoploss" name="stoploss" required><br>
 
-    <label for="c2c">C2C:</label>
+    <label for="c2c" class="size2">C2C:</label>
     <input type="text" id="c2c" name="c2c" required><br>
 
     <label for="comment">Comment:</label>
     <textarea id="comment" name="comment" rows="4" required></textarea><br>
 
-    <button type="submit">Add Entry</button>
+    <button type="submit" onclick="journalTable"></a>Add Entry</button>
   </form>
 
   <table id="journalTable">
     <tr>
+      <th>S.no.</th>
       <th>Date</th>
       <th>Trade</th>
       <th>Profit</th>
@@ -88,10 +148,32 @@
       <th>C2C</th>
       <th>Comment</th>
     </tr>
+    <tr class="entry">
+      <th>i.</th>
+      <th>01/01/2024</th>
+      <th>Nifty</th>
+      <th>2500</th>
+      <th>0</th>
+      <th>4000</th>
+      <th>540</th>
+      <th>Na</th>
+      <th>Tata share</th>
+    </tr>
+    <tr class="entry">
+      <th>ii.</th>
+      <th>02/01/2024</th>
+      <th>Nifty</th>
+      <th>3000</th>
+      <th>200</th>
+      <th>4500</th>
+      <th>240</th>
+      <th>Na</th>
+      <th>Maruti share</th>
+    </tr>
   </table>
 
   <script>
-    document.getElementById("journalForm").addEventListener("submit", function(event) {
+    document.getElementById("journalForm").addEventListener("submit", function (event) {
       event.preventDefault();
       var table = document.getElementById("journalTable");
       var row = table.insertRow(-1);
@@ -117,4 +199,5 @@
     });
   </script>
 </body>
+
 </html>
